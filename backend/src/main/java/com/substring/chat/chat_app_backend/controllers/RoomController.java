@@ -4,8 +4,6 @@ package com.substring.chat.chat_app_backend.controllers;
 import com.substring.chat.chat_app_backend.entity.Message;
 import com.substring.chat.chat_app_backend.entity.Room;
 import com.substring.chat.chat_app_backend.repositories.RoomRepositories;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +14,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/v1/rooms")
+@CrossOrigin("http://localhost:5173")
 public class RoomController {
 
     private final RoomRepositories roomRepositories;
