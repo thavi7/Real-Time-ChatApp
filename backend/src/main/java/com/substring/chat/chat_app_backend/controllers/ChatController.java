@@ -1,5 +1,6 @@
 package com.substring.chat.chat_app_backend.controllers;
 
+import com.substring.chat.chat_app_backend.config.AppConstance;
 import com.substring.chat.chat_app_backend.entity.Message;
 import com.substring.chat.chat_app_backend.entity.Room;
 import com.substring.chat.chat_app_backend.payload.MessageRequest;
@@ -16,7 +17,7 @@ import java.time.LocalDateTime;
 
 @RequiredArgsConstructor
 @RestController
-@CrossOrigin("http://localhost:5173")
+@CrossOrigin(AppConstance.FRONTEND_BASE_URL)
 public class ChatController {
     private final RoomRepositories roomRepositories;
 
