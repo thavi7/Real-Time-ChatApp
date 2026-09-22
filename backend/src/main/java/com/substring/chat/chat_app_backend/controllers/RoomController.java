@@ -15,7 +15,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/v1/rooms")
-@CrossOrigin(AppConstance.FRONTEND_BASE_URL)
+@CrossOrigin("https://creative-crepe-e7fcee.netlify.app")
 public class RoomController {
 
     private final RoomRepositories roomRepositories;
