@@ -9,10 +9,11 @@ import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerCo
 @Configuration
 @EnableWebSocketMessageBroker
 public class WebsocketConfig implements WebSocketMessageBrokerConfigurer {
+
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/chat")
-                .setAllowedOrigins(AppConstance.FRONTEND_BASE_URL)
+                .setAllowedOrigins("https://creative-crepe-e7fcee.netlify.app")
                 .withSockJS();
     }
 
