@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 
 @RequiredArgsConstructor
 @RestController
-@CrossOrigin("https://creative-crepe-e7fcee.netlify.app")
+@CrossOrigin("https://mini-discord4-friends.netlify.app")
 public class ChatController {
     private final RoomRepositories roomRepositories;
 

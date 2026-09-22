@@ -13,7 +13,7 @@ public class WebsocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/chat")
-                .setAllowedOrigins("https://creative-crepe-e7fcee.netlify.app")
+                .setAllowedOrigins("https://mini-discord4-friends.netlify.app")
                 .withSockJS();
     }
 
